@@ -40,7 +40,6 @@ const Login = ({ login }) => {
           border: "1px solid #e5e7eb",
         }}
       >
-        {/* Heading */}
         <h2
           style={{
             fontSize: "28px",
@@ -62,7 +61,6 @@ const Login = ({ login }) => {
           Login to continue to AI Quiz
         </p>
 
-        {/* Error */}
         {error && (
           <div
             style={{
@@ -78,9 +76,9 @@ const Login = ({ login }) => {
           </div>
         )}
 
-        {/* Form */}
+
         <form onSubmit={handleSubmit}>
-          {/* Email */}
+  
           <div style={{ marginBottom: "18px" }}>
             <label
               style={{
@@ -110,7 +108,7 @@ const Login = ({ login }) => {
             />
           </div>
 
-          {/* Password */}
+   
           <div style={{ marginBottom: "24px" }}>
             <label
               style={{
@@ -140,7 +138,6 @@ const Login = ({ login }) => {
             />
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             style={{
@@ -159,7 +156,6 @@ const Login = ({ login }) => {
           </button>
         </form>
 
-        {/* Footer */}
         <p
           style={{
             marginTop: "22px",

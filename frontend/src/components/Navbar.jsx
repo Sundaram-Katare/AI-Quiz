@@ -1,4 +1,3 @@
-// filepath: d:\Visual Code\Full - 2\AI Quiz\frontend\src\components\Navbar.jsx
 import { Link } from "react-router-dom";
 
 const Navbar = ({ logout }) => {
@@ -16,7 +15,6 @@ const Navbar = ({ logout }) => {
         boxSizing: "border-box",
       }}
     >
-      {/* Logo */}
       <h1
         style={{
           fontSize: "20px",
@@ -28,7 +26,6 @@ const Navbar = ({ logout }) => {
         AI Quiz
       </h1>
 
-      {/* Navigation Links */}
       <div
         style={{
           display: "flex",
@@ -72,7 +69,6 @@ const Navbar = ({ logout }) => {
           Profile
         </Link>
 
-        {/* Logout Button */}
         <button
           onClick={logout}
           style={{

@@ -49,7 +49,7 @@ const CreateQuiz = () => {
           border: "1px solid #e5e7eb",
         }}
       >
-        {/* Heading */}
+        
         <h2
           style={{
             fontSize: "28px",
@@ -71,7 +71,6 @@ const CreateQuiz = () => {
           Enter quiz details and let AI generate questions for you.
         </p>
 
-        {/* Error */}
         {error && (
           <div
             style={{
@@ -119,7 +118,6 @@ const CreateQuiz = () => {
             /> */}
           </div>
 
-          {/* Difficulty */}
           <div style={{ marginBottom: "18px" }}>
             <label
               style={{
@@ -151,7 +149,6 @@ const CreateQuiz = () => {
             </select>
           </div>
 
-          {/* Number of Questions */}
           <div style={{ marginBottom: "26px" }}>
             <label
               style={{
@@ -190,7 +187,6 @@ const CreateQuiz = () => {
             </p>
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={loading}

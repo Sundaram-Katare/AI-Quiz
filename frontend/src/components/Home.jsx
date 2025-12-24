@@ -14,7 +14,7 @@ const Home = () => {
         boxSizing: "border-box",
       }}
     >
-      {/* Hero Section */}
+      
       <section
         style={{
           maxWidth: "1100px",
@@ -47,7 +47,7 @@ const Home = () => {
             lineHeight: "1.6",
           }}
         >
-          Instantly generate smart quizzes on any topic using AI.  
+          Instantly generate smart quizzes on Current Affairs using AI.  
           Track your performance, improve faster, and learn smarter.
         </p>
 
@@ -95,7 +95,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section
         style={{
           maxWidth: "1100px",
@@ -152,7 +151,6 @@ const Home = () => {
         ))}
       </section>
 
-      {/* CTA Section */}
       <section
         style={{
           maxWidth: "900px",

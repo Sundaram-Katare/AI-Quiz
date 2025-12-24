@@ -1,4 +1,3 @@
-// filepath: d:\Visual Code\Full - 2\AI Quiz\frontend\src\services\api.js
 import axios from 'axios';
 
 const api = axios.create({

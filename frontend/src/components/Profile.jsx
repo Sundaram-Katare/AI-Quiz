@@ -114,7 +114,6 @@ const Profile = () => {
           Track your quiz activity and performance
         </p>
 
-        {/* Info Card */}
         <div
           style={{
             backgroundColor: "#ffffff",
@@ -144,7 +143,6 @@ const Profile = () => {
           </p>
         </div>
 
-        {/* Stats Grid */}
         <div
           style={{
             display: "grid",
@@ -152,7 +150,6 @@ const Profile = () => {
             gap: "20px",
           }}
         >
-          {/* Total Quizzes */}
           <div
             style={{
               backgroundColor: "#ffffff",
@@ -181,7 +178,6 @@ const Profile = () => {
             </h3>
           </div>
 
-          {/* Total Questions */}
           <div
             style={{
               backgroundColor: "#ffffff",
@@ -210,7 +206,6 @@ const Profile = () => {
             </h3>
           </div>
 
-          {/* Latest Score */}
           <div
             style={{
               backgroundColor: "#ffffff",
@@ -241,7 +236,6 @@ const Profile = () => {
             </h3>
           </div>
 
-          {/* Average Score */}
           <div
             style={{
               backgroundColor: "#ffffff",

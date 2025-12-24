@@ -7,7 +7,6 @@ const router = express.Router();
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// Generate quiz
 router.post('/generate', auth, async (req, res) => {
   const { topic, difficulty, numQuestions } = req.body;
   if (numQuestions < 1 || numQuestions > 20) return res.status(400).json({ msg: 'Invalid number of questions' });
@@ -32,7 +31,6 @@ router.post('/generate', auth, async (req, res) => {
   }
 });
 
-// Get quiz by ID
 router.get('/:id', auth, async (req, res) => {
   try {
     const quiz = await Quiz.findById(req.params.id);
@@ -43,7 +41,6 @@ router.get('/:id', auth, async (req, res) => {
   }
 });
 
-// Submit quiz
 router.post('/submit', auth, async (req, res) => {
   const { quizId, answers } = req.body;
   try {
