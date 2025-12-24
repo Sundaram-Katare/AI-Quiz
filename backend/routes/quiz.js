@@ -14,7 +14,10 @@ router.post('/generate', auth, async (req, res) => {
 
   try {
     const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
-    const prompt = `Generate ${numQuestions} ${difficulty} level quiz questions about "${topic}". Return JSON only: {"questions": [{"question": "text", "options": ["A", "B", "C", "D"], "correctAnswer": "A"}]}`;
+    const prompt = `Generate ${numQuestions} ${difficulty} level quiz questions based on current Affairs.
+    Focus on Indian and global current affairs for government/competitive exams.
+    Create tricky, exam-style MCQs with close options.
+    Return JSON only: {"questions": [{"question": "text", "options": ["A", "B", "C", "D"], "correctAnswer": "A"}]}`;
 
     const result = await model.generateContent(prompt);
     let content = result.response.text().replace(/^```json\s*/, '').replace(/\s*```$/, '');

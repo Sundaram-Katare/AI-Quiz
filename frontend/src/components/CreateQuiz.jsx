@@ -15,7 +15,7 @@ const CreateQuiz = () => {
     setLoading(true);
     try {
       const res = await api.post("/quiz/generate", {
-        topic,
+        topic: "Current Affairs",
         difficulty,
         numQuestions,
       });
@@ -91,7 +91,7 @@ const CreateQuiz = () => {
         <form onSubmit={handleSubmit}>
           {/* Topic */}
           <div style={{ marginBottom: "18px" }}>
-            <label
+            {/* <label
               style={{
                 display: "block",
                 fontSize: "14px",
@@ -116,7 +116,7 @@ const CreateQuiz = () => {
                 fontSize: "14px",
                 outline: "none",
               }}
-            />
+            /> */}
           </div>
 
           {/* Difficulty */}
@@ -141,7 +141,7 @@ const CreateQuiz = () => {
                 borderRadius: "8px",
                 border: "1px solid #d1d5db",
                 fontSize: "14px",
-                backgroundColor: "#ffffff",
+                backgroundColor: "#000000ff",
                 outline: "none",
               }}
             >
