@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api'
+  baseURL: 'https://ai-quiz-j6uu.onrender.com/api'
 });
 
 api.interceptors.request.use((config) => {
