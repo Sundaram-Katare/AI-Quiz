@@ -81,7 +81,7 @@ const PlayQuiz = () => {
     >
       <div
         style={{
-          maxWidth: "900px",
+          minWidth: "100vw",
           margin: "0 auto",
         }}
       >
